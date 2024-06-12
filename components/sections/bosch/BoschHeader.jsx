@@ -51,7 +51,7 @@ const BoschHeader = () => {
             <div className="flex w-full max-w-[78rem] flex-col">
               <div className="flex w-full justify-between">
                 <Link
-                  href="/services-centers/bosch"
+                  href="/"
                   className="flex max-h-11 max-w-28 items-center"
                 >
                   {logo}
@@ -66,14 +66,14 @@ const BoschHeader = () => {
                 className="flex flex-col px-7 py-16"
               >
                 <Link
-                  href="/services-centers/bosch"
+                  href="/"
                   className="flex items-center justify-between gap-x-3 px-10 py-3 hover:bg-white/5 sm:w-1/3"
                 >
                   <span>Home</span>
                   {chevron}
                 </Link>
                 <Link
-                  href="/services-centers/bosch"
+                  href="/"
                   className="flex items-center justify-between gap-x-3 px-10 py-3 hover:bg-white/5 sm:w-1/3"
                 >
                   <span>Services</span>

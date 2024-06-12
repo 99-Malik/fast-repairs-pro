@@ -9,7 +9,7 @@ const SamsungFooter = () => {
       <footer className="mt-5  flex w-full max-w-[78rem] flex-col gap-y-5 px-5 py-10">
         <div className="flex   items-center gap-2">
           <Link
-            href="/services-centers/samsung"
+            href="/"
             className="flex max-h-11 max-w-28 items-center"
           >
             {logo}

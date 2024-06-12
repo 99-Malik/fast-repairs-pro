@@ -8,6 +8,8 @@ import SiemensBanner from "@/components/sections/siemens/SiemensBanner";
 import SiemensMissionSection from "@/components/sections/siemens/SiemensMissionSection";
 import SiemensQualitySection from "@/components/sections/siemens/SiemensQualitySection";
 import SiemensServices from "@/components/sections/siemens/SiemensServices";
+import HomeQuality from "../../../components/sections/siemens/HomeQuality"
+import Feature from "../../../components/sections/siemens/feature"
 
 const SiemensServiceCenterPage = () => {
   return (
@@ -15,6 +17,8 @@ const SiemensServiceCenterPage = () => {
       <SiemensBanner />
       <QualitySection />
       <AboutSection />
+      <HomeQuality/>
+      <Feature/>
       <ServicesSection />
       <OurMissionSection />
     </div>

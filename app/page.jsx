@@ -8,6 +8,8 @@ import ServicesSection from "@/components/sections/home/ServicesSection";
 import OurMissionSection from "@/components/sections/home/OurMissionSection";
 import Footer from "@/components/sections/home/Footer";
 import FixedCallButtons from "@/components/buttons/FixCallButtons";
+import HomeQuality from "../components/sections/home/HomeQuality"
+import Feature from "../components/sections/home/feature"
 
 export default function Home() {
   return (
@@ -17,6 +19,8 @@ export default function Home() {
       <MainBanner />
       <QualitySection />
       <AboutSection />
+      <HomeQuality/>
+      <Feature/>
       <ServicesSection />
       <OurMissionSection />
       <Footer />

@@ -3,14 +3,14 @@ import Link from "next/link";
 
 const BoschFooter = () => {
   return (
-    <footer className="flex justify-center bg-[#2D3033] text-white">
+    <footer className="flex justify-center bg-[#363636] text-white">
       <div className="mt-5 flex w-full max-w-[78rem] flex-col gap-y-5 px-5 py-10">
         <div className="flex items-center gap-x-1">
           <Image src="/logo.svg" width={50} height={50} alt="LOGO" />
           <div className="flex flex-col justify-between px-2">
-            <span className="text-3xl font-bold uppercase">Rapid</span>
+            <span className="text-3xl font-bold uppercase">Appliances</span>
             <span className="text-xs uppercase text-white">
-              Appliances Repairs
+              Repairs UAE
             </span>
           </div>
         </div>

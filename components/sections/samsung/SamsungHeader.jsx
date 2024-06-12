@@ -17,20 +17,20 @@ const SamsungHeader = () => {
     <header className="fixed z-50 flex w-full items-center justify-center bg-white drop-shadow-sm">
       <div className=" flex h-16 w-full max-w-[78rem] items-center gap-12 px-5 sm:px-7 md:px-10 xl:px-0">
         <Link
-          href="/services-centers/samsung"
+          href="/"
           className="flex max-h-11 max-w-28 items-center"
         >
           {logo}
         </Link>
         <div className="hidden w-full cursor-pointer items-center justify-center gap-12 md:flex ">
           <h1 className="hover:color">
-            <Link href="/services-centers/samsung">Home</Link>
+            <Link href="/">Home</Link>
           </h1>
           <h1>
-            <Link href="/services-centers/samsung"> Services</Link>
+            <Link href="/"> Services</Link>
           </h1>
           <h1>
-            <Link href="/services-centers/samsung">Contact Us</Link>
+            <Link href="/">Contact Us</Link>
           </h1>
         </div>
 
@@ -50,7 +50,7 @@ const SamsungHeader = () => {
             <div className="flex w-full max-w-[78rem] flex-col">
               <div className="flex w-full justify-between">
                 <Link
-                  href="/services-centers/samsung"
+                  href="/"
                   className="flex max-h-11 max-w-28 items-center"
                 >
                   {logo}
@@ -65,14 +65,14 @@ const SamsungHeader = () => {
                 className="flex flex-col px-7 py-16"
               >
                 <Link
-                  href="/services-centers/samsung"
+                  href="/"
                   className="flex items-center justify-between gap-x-3 px-10 py-3 hover:bg-white/5 sm:w-1/3"
                 >
                   <span>Home</span>
                   {chevron}
                 </Link>
                 <Link
-                  href="/services-centers/samsung"
+                  href="/"
                   className="flex items-center justify-between gap-x-3 px-10 py-3 hover:bg-white/5 sm:w-1/3"
                 >
                   <span>Services</span>

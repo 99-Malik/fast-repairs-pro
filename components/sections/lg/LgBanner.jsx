@@ -1,50 +1,47 @@
-"use client";
+import { phoneNumber } from "@/libs/phoneNumber";
+import Link from "next/link";
+import React from "react";
 
-import { phoneNumber } from "@/utils/phoneNumber";
-import { Pacifico } from "next/font/google";
-import Image from "next/image";
-import SamsungBannerCallButton from "../samsung/SamsungBannerCallButton";
-import SamsungWhatsappButton from "../samsung/SamsungWhatsappButton";
-
-const pacifico = Pacifico({ subsets: ["latin"], weight: ["400"] });
-
-const LgBanner = () => {
+const LgMain = () => {
   return (
-    <div className="relative flex justify-center overflow-hidden">
-      <div className="w-full max-w-7xl px-5 py-24 md:py-20">
-        <div className="flex flex-col gap-y-3 lg:max-w-[50%] xl:max-w-[550px]">
-          <span
-            className={`text-2xl font-extrabold text-gray-400 sm:text-3xl ${pacifico.className}`}
-          >
-            We are ...
-          </span>
-          <span className="text-5xl font-extrabold sm:text-6xl">
-            Authorized LG Service Center
-          </span>
-          <span className="mt-5 text-3xl font-bold">
-            Same day service Guaranteed
-          </span>
-          <span className="mt-5 text-xl">
-            We provide the best appliance services in Dubai and Abu Dhabi for
-            Lg home appliances.
-          </span>
-          <div className="flex flex-col gap-2 sm:flex-row">
-            <SamsungBannerCallButton />
-            <SamsungWhatsappButton />
+    <div className="flex h-screen mt-12 w-full bg-[url('/main-banner.jpg')] bg-cover bg-fixed bg-center bg-no-repeat md:h-[90vh]">
+      <div className="flex h-full w-full items-center justify-center bg-black/70">
+        <div className="flex h-full w-full max-w-7xl flex-col justify-center gap-y-10 px-5 text-white">
+          <div className="flex flex-col gap-y-5">
+            <h1 className="text-4xl font-black sm:text-5xl">
+              Authorized LG Service Center: <br />
+              <span className="text-white/75">
+                Fast, reliable repairs for a hassle-free home.
+              </span>
+            </h1>
+            <p>
+              Our skilled technicians are committed to restoring your appliances
+              to peak performance, ensuring your comfort and convenience. From
+              fixing minor glitches to tackling major breakdowns, we've got you
+              covered. Experience top-notch service that keeps your household
+              running smoothly!
+            </p>
+          </div>
+          <div className="flex flex-col gap-3 sm:flex-row">
+            <Link
+              href={`tel:${phoneNumber}`}
+              target="_blank"
+              className="flex flex-shrink-0 justify-center rounded border-4 border-none bg-darkred px-14 py-2.5 text-white transition duration-300 ease-in-out hover:bg-white hover:text-black"
+            >
+              Call Us
+            </Link>
+            <Link
+              href={`https://wa.me/${phoneNumber}?text=Hello%20I%20need%20your%20help%20with%20my%20appliance%20repairs`}
+              target="_blank"
+              className="flex flex-shrink-0 justify-center rounded border bg-black/50 px-14 py-2.5 text-white transition duration-300 ease-in-out hover:bg-white hover:text-black"
+            >
+              WhatsApp Us
+            </Link>
           </div>
         </div>
       </div>
-      <div className="absolute left-5 top-44 -z-10 h-28 w-28 rounded-full bg-yellow-300/70"></div>
-      <div className="absolute -right-44 top-96 -z-10 h-80 w-80 rounded-full bg-blue-900/85 md:-left-44"></div>
-      <Image
-        src="/home/washing-machine-repair.png"
-        width={700}
-        height={1000}
-        alt="washing machine repair"
-        className="absolute right-0 top-0 z-0 hidden xl:block"
-      />
     </div>
   );
 };
 
-export default LgBanner;
+export default LgMain;

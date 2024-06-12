@@ -35,7 +35,7 @@ const SiemensHeader = () => {
   return (
     <header className="fixed z-50 flex w-full items-center justify-center bg-white drop-shadow-sm text-black">
       <div className=" flex h-20 w-full max-w-[78rem] items-center gap-12 px-5 sm:px-7 md:px-10 xl:px-0">
-        <Link href="/services-centers/siemens" className="flex items-center">
+        <Link href="/" className="flex items-center">
           <Image
             src="/logos/siemens-logo-white.svg"
             width={130}
@@ -72,7 +72,7 @@ const SiemensHeader = () => {
             <div className="flex w-full max-w-[78rem] flex-col">
               <div className="flex w-full justify-between">
                 <Link
-                  href="/services-centers/siemens"
+                  href="/"
                   className="flex items-center"
                 >
                   <Image
@@ -93,14 +93,14 @@ const SiemensHeader = () => {
                 className="flex flex-col px-7 py-16"
               >
                 <Link
-                  href="/services-centers/bosch"
+                  href="/"
                   className="flex items-center justify-between gap-x-3 px-10 py-3 hover:bg-white/5 sm:w-1/3"
                 >
                   <span>Home</span>
                   {chevron}
                 </Link>
                 <Link
-                  href="/services-centers/bosch"
+                  href="/"
                   className="flex items-center justify-between gap-x-3 px-10 py-3 hover:bg-white/5 sm:w-1/3"
                 >
                   <span>Services</span>

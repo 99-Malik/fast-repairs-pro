@@ -62,12 +62,12 @@ const ServicePage = ({ params }) => {
               {service} Repair
             </span>
             <span className="text-">
-              Our {service} service at Rapid Appliances Repairs guarantees
+              Our {service} service at Appliances Repairs UAE guarantees
               meticulous attention to detail, ensuring your appliance operates
               at peak performance. With skilled technicians and state-of-the-art
               equipment, we diagnose and resolve washing machine issues swiftly,
               restoring convenience to your daily routine. From routine
-              maintenance to complex repairs, trust Rapid Appliances Repairs to
+              maintenance to complex repairs, trust Appliances Repairs UAE to
               provide dependable washing machine services that extend the
               lifespan of your appliance.
             </span>
