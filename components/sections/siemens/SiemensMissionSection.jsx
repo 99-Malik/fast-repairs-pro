@@ -29,7 +29,7 @@ const SiemensMissionSection = () => {
             </span>
           </div>
           <span className="font-light">
-            At Appliances Repairs UAE, our vision is to redefine the standards
+            At Service Center UAE, our vision is to redefine the standards
             of excellence in appliance repair services across Dubai and Abu
             Dhabi. We envision a future where our agile methodologies, fueled by
             workplace diversity and empowerment, drive continuous innovation and
@@ -44,7 +44,7 @@ const SiemensMissionSection = () => {
             </span>
           </div>
           <span className="font-light">
-            Our goal at Appliances Repairs UAE is to establish ourselves as
+            Our goal at Service Center UAE is to establish ourselves as
             the premier provider of appliance repair services in Dubai and Abu
             Dhabi within the next five years. We aim to achieve this by
             consistently delivering exceptional quality repairs, exceeding

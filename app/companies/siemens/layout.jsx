@@ -4,7 +4,7 @@ import SiemensFooter from "@/components/sections/siemens/SiemensFooter";
 import SiemensHeader from "@/components/sections/siemens/SiemensHeader";
 
 export const metadata = {
-  title: "Siemens Repair Center | Appliances Repairs UAE",
+  title: "Siemens Repair Center | Service Center UAE",
   description: "Best home appliance repair service in Dubai and Abu Dhabi",
 };
 

@@ -1,44 +1,47 @@
-import { Pacifico } from "next/font/google";
-import Image from "next/image";
+import { phoneNumber } from "@/libs/phoneNumber";
+import Link from "next/link";
+import React from "react";
 
-const pacifico = Pacifico({ subsets: ["latin"], weight: ["400"] });
-
-const MainBanner = () => {
+const SamsungMain = () => {
   return (
-    <div className="relative -z-20 flex justify-center overflow-hidden bg-blue-200/40">
-      <div className="w-full max-w-7xl px-5 py-14 md:py-20">
-        <div className="flex flex-col gap-y-3 lg:max-w-[50%] xl:max-w-[550px]">
-          <span
-            className={`text-3xl font-extrabold text-gray-400 ${pacifico.className}`}
-          >
-            We Provide ...
-          </span>
-          <span className="text-6xl font-extrabold">
-            Home Appliances Repair Services
-          </span>
-          <span className="mt-5 text-3xl font-bold">
-            Same day service Guaranteed
-          </span>
-          <span className="font- mt-5 text-xl">
-            We provide the best appliance services in Dubai and Abu Dhabi from
-            Bosch, Samsung, LG and Siemens home appliances.
-          </span>
-          <button className="mt-10 w-fit rounded-full bg-blue-400 px-12 py-4 text-sm font-bold uppercase text-white transition-all duration-300 ease-in-out hover:bg-blue-950">
-            Hire us now
-          </button>
+    <div className="flex h-auto w-full  bg-[url('/main-banner.jpg')] bg-cover bg-fixed bg-center bg-no-repeat md:h-[90vh]">
+      <div className="flex h-full w-full items-center justify-center bg-black/70">
+        <div className="flex h-auto w-full max-w-7xl flex-col justify-center gap-y-10 px-5 py-5 text-white">
+          <div className="flex flex-col  gap-y-5">
+            <h1 className="text-4xl mt-6 font-black sm:text-5xl">
+              Authorized Samsung Service Center: <br />
+              <span className="text-white/75">
+                Fast, reliable repairs for a hassle-free home.
+              </span>
+            </h1>
+            <p>
+              Our skilled technicians are committed to restoring your appliances
+              to peak performance, ensuring your comfort and convenience. From
+              fixing minor glitches to tackling major breakdowns, we've got you
+              covered. Experience top-notch service that keeps your household
+              running smoothly!
+            </p>
+          </div>
+          <div className="flex flex-col gap-3 sm:flex-row">
+            <Link
+              href={`tel:${phoneNumber}`}
+              target="_blank"
+              className="flex flex-shrink-0 justify-center rounded bg-white px-14 py-2.5 text-black transition duration-300 ease-in-out hover:bg-black hover:text-white hover:border hover:border-white"
+            >
+              Call Us
+            </Link>
+            <Link
+              href={`https://wa.me/${phoneNumber}?text=Hello%20I%20need%20your%20help%20with%20my%20appliance%20repairs`}
+              target="_blank"
+              className="flex flex-shrink-0 justify-center rounded border bg-black/50 px-14 py-2.5 text-white transition duration-300 ease-in-out hover:bg-white hover:text-black"
+            >
+              WhatsApp Us
+            </Link>
+          </div>
         </div>
       </div>
-      <div className="absolute left-5 top-44 -z-10 h-28 w-28 rounded-full bg-yellow-300/70"></div>
-      <div className="absolute -right-44 top-96 -z-10 h-80 w-80 rounded-full bg-blue-900/85 md:-left-44"></div>
-      <Image
-        src="/home/washing-machine-repair.png"
-        width={700}
-        height={1000}
-        alt="washing machine repair"
-        className="absolute right-0 top-0 z-0 hidden xl:block"
-      />
     </div>
   );
 };
 
-export default MainBanner;
+export default SamsungMain;

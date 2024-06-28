@@ -3,7 +3,7 @@ import LgFooter from "@/components/sections/lg/LgFooter";
 import LgHeader from "@/components/sections/lg/LgHeader";
 
 export const metadata = {
-  title: "Lg Repair Center | Appliances Repairs UAE",
+  title: "Lg Repair Center | Service Center UAE",
   description: "Best home appliance repair service in Dubai and Abu Dhabi",
 };
 

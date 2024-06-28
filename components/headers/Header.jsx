@@ -15,9 +15,9 @@ const Header = () => {
         <div className="flex items-center gap-x-1">
           <Image src="/logo.svg" width={50} height={50} alt="LOGO" />
           <div className="flex flex-col justify-between px-2">
-            <span className="text-3xl font-bold uppercase">Appliances</span>
+            <span className="text-3xl font-bold uppercase">Service</span>
             <span className="text-xs uppercase text-black/80">
-            Repairs UAE
+            Center UAE
             </span>
           </div>
         </div>
@@ -72,10 +72,10 @@ const Header = () => {
                     <Image src="logo.svg" width={50} height={50} alt="LOGO" />
                     <div className="flex flex-col justify-between px-2">
                       <span className="text-3xl font-bold uppercase text-white">
-                        Applinaces
+                        Service
                       </span>
                       <span className="text-xs uppercase text-white/30">
-                        Repairs UAE
+                        Center UAE
                       </span>
                     </div>
                   </div>

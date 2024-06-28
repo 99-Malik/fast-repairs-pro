@@ -4,7 +4,7 @@ import BoschHeader from "@/components/sections/bosch/BoschHeader";
 import SiemensFixedContactButton from "@/components/sections/siemens/SiemensFixedContactButton";
 
 export const metadata = {
-  title: "Bosch Repair Center | Appliances Repairs UAE",
+  title: "Bosch Repair Center | Service Center UAE",
   description: "Best home appliance repair service in Dubai and Abu Dhabi",
 };
 
