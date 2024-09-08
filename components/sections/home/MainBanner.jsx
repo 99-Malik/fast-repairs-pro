@@ -9,7 +9,7 @@ const SamsungMain = () => {
         <div className="flex h-auto w-full max-w-7xl flex-col justify-center gap-y-10 px-5 py-5 text-white">
           <div className="flex flex-col  gap-y-5">
             <h1 className="text-4xl mt-6 font-black sm:text-5xl">
-              Authorized Samsung Service Center: <br />
+             Your appliances deserve the best: <br />
               <span className="text-white/75">
                 Fast, reliable repairs for a hassle-free home.
               </span>
