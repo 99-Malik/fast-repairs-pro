@@ -10,11 +10,14 @@ import SiemensQualitySection from "@/components/sections/siemens/SiemensQualityS
 import SiemensServices from "@/components/sections/siemens/SiemensServices";
 import HomeQuality from "../../../components/sections/siemens/HomeQuality"
 import Feature from "../../../components/sections/siemens/feature"
+import MainBanner from "@/components/sections/home/MainBanner";
 
 const SiemensServiceCenterPage = () => {
   return (
     <div className="flex flex-col">
-      <SiemensBanner />
+      {/* <SiemensBanner /> */}
+            <MainBanner/>
+
       <QualitySection />
       <AboutSection />
       <HomeQuality/>

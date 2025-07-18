@@ -5,11 +5,15 @@ import QualitySection from "@/components/sections/home/QualitySection";
 import ServicesSection from "@/components/sections/home/ServicesSection";
 import HomeQuality from "../../../components/sections/bosch/HomeQuality"
 import Feature from "../../../components/sections/bosch/feature"
+import Header from "@/components/headers/Header";
+import MainBanner from "@/components/sections/home/MainBanner";
 
 const BoschServiceCenterPage = () => {
   return (
     <div className="flex flex-col">
-      <BoschBanner />
+      {/* <BoschBanner /> */}
+            <MainBanner />
+
       <QualitySection />
       <AboutSection />
       <HomeQuality/>

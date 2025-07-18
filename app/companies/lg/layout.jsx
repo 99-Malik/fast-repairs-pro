@@ -1,6 +1,8 @@
 import FixedCallButtons from "@/components/buttons/FixCallButtons";
 import LgFooter from "@/components/sections/lg/LgFooter";
 import LgHeader from "@/components/sections/lg/LgHeader";
+import Header from "@/components/headers/Header";
+import Footer from "@/components/sections/home/Footer";
 
 export const metadata = {
   title: "Lg Repair Center | Service Center UAE",
@@ -10,9 +12,11 @@ export const metadata = {
 const Bosch = ({ children }) => {
   return (
     <body className="flex flex-col bg-lg-bg select-none">
-      <LgHeader />
+      {/* <LgHeader /> */}
+      <Header/>
       {children}
-      <LgFooter />
+      {/* <LgFooter /> */}
+      <Footer/>
       <FixedCallButtons />
     </body>
   );

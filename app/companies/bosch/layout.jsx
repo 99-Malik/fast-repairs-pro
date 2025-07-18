@@ -2,6 +2,8 @@ import FixedCallButtons from "@/components/buttons/FixCallButtons";
 import BoschFooter from "@/components/sections/bosch/BoschFooter";
 import BoschHeader from "@/components/sections/bosch/BoschHeader";
 import SiemensFixedContactButton from "@/components/sections/siemens/SiemensFixedContactButton";
+import Header from "@/components/headers/Header";
+import Footer from "@/components/sections/home/Footer";
 
 export const metadata = {
   title: "Bosch Repair Center | Service Center UAE",
@@ -11,9 +13,12 @@ export const metadata = {
 const Bosch = ({ children }) => {
   return (
     <body className="flex flex-col">
-      <BoschHeader />
+            <Header />
+
+      {/* <BoschHeader /> */}
       {children}
-      <BoschFooter />
+      {/* <BoschFooter /> */}
+      <Footer/>
       <FixedCallButtons />
     </body>
   );

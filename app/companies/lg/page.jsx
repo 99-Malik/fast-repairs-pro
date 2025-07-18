@@ -6,12 +6,14 @@ import LgServices from "@/components/sections/lg/LgServices";
 import HomeQuality from "../../../components/sections/lg/HomeQuality"
 import Feature from "../../../components/sections/lg/feature"
 
+import MainBanner from "@/components/sections/home/MainBanner";
 
 
 const LgServiceCenterPage = () => {
   return (
     <div className="flex flex-col">
-      <LgBanner />
+      {/* <LgBanner /> */}
+      <MainBanner/>
       <LgQualitySection />
       <AboutSection />
       <HomeQuality/>

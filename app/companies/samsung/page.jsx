@@ -5,12 +5,15 @@ import ServicesSection from "@/components/sections/home/ServicesSection";
 import SamsungBanner from "@/components/sections/samsung/SamsungBanner";
 import HomeQuality from "../../../components/sections/samsung/HomeQuality"
 import Feature from "../../../components/sections/samsung/feature"
+import MainBanner from "@/components/sections/home/MainBanner";
 
 
 const SamsungServiceCenterPage = () => {
   return (
     <div className="flex flex-col ">
-      <SamsungBanner />
+      {/* <SamsungBanner /> */}
+            <MainBanner/>
+
       <QualitySection />
       <AboutSection />
       <HomeQuality/>
