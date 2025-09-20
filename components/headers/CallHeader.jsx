@@ -1,4 +1,4 @@
-import { phoneNumber, phoneNumberShort } from "@/libs/phoneNumber";
+import { phoneNumber, phoneNumberShort } from "@/utils/phoneNumber";
 
 const CallHeader = () => {
   return (

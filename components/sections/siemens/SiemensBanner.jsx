@@ -1,4 +1,4 @@
-import { phoneNumber } from "../../../libs/phoneNumber.js";
+import { phoneNumber } from "@/utils/phoneNumber";
 import Link from "next/link";
 import React from "react";
 

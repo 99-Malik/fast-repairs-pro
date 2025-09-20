@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import { phoneNumber } from "@/libs/phoneNumber";
+import { phoneNumber } from "@/utils/phoneNumber";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);

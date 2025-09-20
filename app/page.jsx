@@ -1,30 +1,34 @@
 import Image from "next/image";
-import Header from "@/components/headers/Header";
-import CallHeader from "@/components/headers/CallHeader";
-import MainBanner from "@/components/sections/home/MainBanner";
-import QualitySection from "@/components/sections/home/QualitySection";
-import AboutSection from "@/components/sections/home/AboutSection";
-import ServicesSection from "@/components/sections/home/ServicesSection";
-import OurMissionSection from "@/components/sections/home/OurMissionSection";
-import Footer from "@/components/sections/home/Footer";
-import FixedCallButtons from "@/components/buttons/FixCallButtons";
-import HomeQuality from "../components/sections/home/HomeQuality"
-import Feature from "../components/sections/home/feature"
+import ModernHeader from "@/components/headers/ModernHeader";
+import HeroSection from "@/components/sections/home/HeroSection";
+import FeaturesSection from "@/components/sections/home/FeaturesSection";
+import AboutUsSection from "@/components/sections/home/AboutUsSection";
+import ServicesGrid from "@/components/sections/home/ServicesGrid";
+import TestimonialsSection from "@/components/sections/home/TestimonialsSection";
+import ContactSection from "@/components/sections/home/ContactSection";
+import ModernFooter from "@/components/sections/home/ModernFooter";
+import FloatingActionButtons from "@/components/buttons/FloatingActionButtons";
 
 export default function Home() {
   return (
-    <body className="flex flex-col">
-    
-      <Header />
-      <MainBanner />
-      <QualitySection />
-      <AboutSection />
-      <HomeQuality/>
-      <Feature/>
-      <ServicesSection />
-      <OurMissionSection />
-      <Footer />
-      <FixedCallButtons />
-    </body>
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-white to-slate-100 overflow-x-hidden">
+      <ModernHeader />
+      <section id="home">
+        <HeroSection />
+      </section>
+      <section id="services">
+        <FeaturesSection />
+        <ServicesGrid />
+      </section>
+      <section id="about">
+        <AboutUsSection />
+        <TestimonialsSection />
+      </section>
+      <section id="contact">
+        <ContactSection />
+      </section>
+      <ModernFooter />
+      <FloatingActionButtons />
+    </div>
   );
 }

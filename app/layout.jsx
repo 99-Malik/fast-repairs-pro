@@ -6,9 +6,9 @@ import Script from "next/script";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Service Center UAE",
+  title: "Appliance Repairs Pro",
   description:
-    "Service Center UAE is a local appliance repair company in the Dubai and Abu Dhabi. We specialize in repairing all major appliances including refrigerators, washers, dryers, stoves, and more.",
+    "Appliance Repairs Pro is a local appliance repair company in the Dubai and Abu Dhabi. We specialize in repairing all major appliances including refrigerators, washers, dryers, stoves, and more.",
 };
 
 

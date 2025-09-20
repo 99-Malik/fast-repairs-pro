@@ -19,7 +19,7 @@ const AboutSection = () => {
             Appliances for their fast and reliable 24 hour repairing services.
           </span>
           <span className="font-light">
-            Service Center UAE, serving Dubai and Abu Dhabi, adopts agile
+            Appliance Repairs Pro, serving Dubai and Abu Dhabi, adopts agile
             frameworks to offer a comprehensive overview of our services. Our
             iterative approach to corporate strategy encourages collaborative
             thinking, enhancing our overall value proposition. We believe in
