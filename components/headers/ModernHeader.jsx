@@ -45,7 +45,7 @@ const ModernHeader = () => {
                 <div className="absolute -inset-1 rounded-lg bg-gradient-to-r from-primary-600 to-accent-600 opacity-20 blur"></div>
               </div>
               <div className="flex flex-col">
-                <span className="text-md font-bold bg-gradient-to-r from-primary-600 to-accent-600 bg-clip-text text-transparent">
+                <span className="text-lg font-bold bg-gradient-to-r from-primary-600 to-accent-600 bg-clip-text text-transparent">
                   Appliance Repairs Pro
                 </span>
                 <span className="text-xs font-medium text-secondary-600 uppercase tracking-wider">
