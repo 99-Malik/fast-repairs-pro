@@ -1,34 +1,41 @@
-import Image from "next/image";
-import ModernHeader from "@/components/headers/ModernHeader";
-import HeroSection from "@/components/sections/home/HeroSection";
-import FeaturesSection from "@/components/sections/home/FeaturesSection";
-import AboutUsSection from "@/components/sections/home/AboutUsSection";
-import ServicesGrid from "@/components/sections/home/ServicesGrid";
-import TestimonialsSection from "@/components/sections/home/TestimonialsSection";
-import ContactSection from "@/components/sections/home/ContactSection";
-import ModernFooter from "@/components/sections/home/ModernFooter";
-import FloatingActionButtons from "@/components/buttons/FloatingActionButtons";
+import TechFixHeader from "@/components/headers/TechFixHeader";
+import TechFixHero from "@/components/sections/TechFixHero";
+import TechFixServices from "@/components/sections/TechFixServices";
+import TechFixAbout from "@/components/sections/TechFixAbout";
+import TechFixTestimonials from "@/components/sections/TechFixTestimonials";
+import TechFixContact from "@/components/sections/TechFixContact";
+import TechFixFooter from "@/components/sections/TechFixFooter";
+import TechFixFloatingButtons from "@/components/buttons/TechFixFloatingButtons";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-white to-slate-100 overflow-x-hidden">
-      <ModernHeader />
-      <section id="home">
-        <HeroSection />
-      </section>
-      <section id="services">
-        <FeaturesSection />
-        <ServicesGrid />
-      </section>
-      <section id="about">
-        <AboutUsSection />
-        <TestimonialsSection />
-      </section>
-      <section id="contact">
-        <ContactSection />
-      </section>
-      <ModernFooter />
-      <FloatingActionButtons />
+    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-indigo-50 overflow-x-hidden">
+      <TechFixHeader />
+      
+      <main>
+        <section id="home">
+          <TechFixHero />
+        </section>
+        
+        <section id="services">
+          <TechFixServices />
+        </section>
+        
+        <section id="about">
+          <TechFixAbout />
+        </section>
+        
+        <section id="testimonials">
+          <TechFixTestimonials />
+        </section>
+        
+        <section id="contact">
+          <TechFixContact />
+        </section>
+      </main>
+      
+      <TechFixFooter />
+      <TechFixFloatingButtons />
     </div>
   );
 }

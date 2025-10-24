@@ -1,20 +1,29 @@
-import { Inter } from "next/font/google";
+import { Poppins, Roboto } from "next/font/google";
 import "./globals.css";
 import Script from "next/script";
 
+const poppins = Poppins({ 
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700", "800"],
+  variable: "--font-poppins"
+});
 
-const inter = Inter({ subsets: ["latin"] });
+const roboto = Roboto({ 
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "700"],
+  variable: "--font-roboto"
+});
 
 export const metadata = {
-  title: "Appliance Repairs Pro",
+  title: "TechFix Solutions - Premium Appliance Repair Services",
   description:
-    "Appliance Repairs Pro is a local appliance repair company in the Dubai and Abu Dhabi. We specialize in repairing all major appliances including refrigerators, washers, dryers, stoves, and more.",
+    "Professional appliance repair services across UAE. Expert technicians for refrigerators, washing machines, dishwashers, ovens, and all home appliances. Same-day service available.",
 };
 
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={inter.className}>
+    <html lang="en" className={`${poppins.variable} ${roboto.variable}`}>
     <head>
         {/* Include gtag.js script */}
         <Script async src="https://www.googletagmanager.com/gtag/js?id=AW-17521374535" />
@@ -29,7 +38,7 @@ export default function RootLayout({ children }) {
         
 
 </head>
-      <body className={inter.className}>
+      <body className={`${poppins.className} antialiased`}>
 
       {children}
       </body>
